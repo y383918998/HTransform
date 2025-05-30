@@ -14,6 +14,7 @@ camIntrinsics = cameraIntrinsics(focalLength, principalPoint, imageSize);
 height = 2.1798;    % 相机的安装高度，单位为米
 pitch  = 14;        % 相机的俯仰角度，单位为度
 sensor = monoCamera(camIntrinsics, height, 'Pitch', pitch); % 创建单目相机模型
+```
 ### 2. 视频读取
 使用 `uigetfile` 函数让用户选择要处理的视频文件，然后通过 `VideoReader` 读取视频帧。
 ```matlab
